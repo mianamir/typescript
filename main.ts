@@ -29,13 +29,13 @@ do_something();
 
 // Different types in TypeScript
 let no1 = 77;
-no1 = 'a';
+// no1 = 'a';
 
 
 let no2: number;
 no2 = 2;
-no2 = true;
-no2 = 'b';
+// no2 = true;
+// no2 = 'b';
 
 
 let a: number;
@@ -44,6 +44,18 @@ let c: string;
 let d: any;
 let e: number[] = [4,5,6];
 let f: any[] = [4, true, 'g', false];
+
+
+// Enums in TypeDcript
+const Red = 1;
+const Green = 2;
+const Blue = 3;
+const Orange = 4;
+
+let Color = {Red, Green, Blue, Orange};
+
+let bg_color = Color.Red;
+console.log('BG Color: ' + bg_color);
 
 
 

@@ -18,3 +18,24 @@ function do_something() {
     // console.log('Finally:' + i);
 } // func ends
 do_something();
+// Different types in TypeScript
+var no1 = 77;
+// no1 = 'a';
+var no2;
+no2 = 2;
+// no2 = true;
+// no2 = 'b';
+var a;
+var b;
+var c;
+var d;
+var e = [4, 5, 6];
+var f = [4, true, 'g', false];
+// Enums in TypeDcript
+var Red = 1;
+var Green = 2;
+var Blue = 3;
+var Orange = 4;
+var Color = { Red: Red, Green: Green, Blue: Blue, Orange: Orange };
+var bg_color = Color.Red;
+console.log('BG Color: ' + bg_color);
