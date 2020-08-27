@@ -61,9 +61,9 @@ console.log('BG Color: ' + bg_color);
 // Type Assersion
 let message_;
 message_ = 'Amir';
-let ends_with_r = (<string>message_).endsWith('r');
-let alternatively = (message_ as string).endsWith('r');
-console.log('Name ends with R: ' + ends_with_r);
+// let ends_with_r = (<string>message_).endsWith('r');
+// let alternatively = (message_ as string).endsWith('r');
+// console.log(ends_with_r);
 
 // Arrow functions
 
@@ -73,6 +73,147 @@ let do_log = (message) => {
 
 // if one line code then this way
 let other_log = (message) => console.log(message);
+
+
+// Custom types
+// let drwa_point = (point) => {
+//     // ...
+// }
+
+// drwa_point({
+//     x:1,
+//     y:2,
+//     z:3
+// })
+
+// Interface, just like other languages c3, java
+
+// Cohesion Principle
+// things are related should be part of one unit
+
+// Interfaces are purely for declarations not
+// for implemenation
+
+interface Point{
+    x: number,
+    y: number
+}
+
+
+// Inline innotation
+let drwa_point = (point: Point) => {
+    // ...
+}
+
+let drwa_points = (point_a: Point, point_b: Point) => {
+    // ...
+}
+
+drwa_point({
+    x:1,
+    y:2
+})
+
+
+// To avoid cohesion principle volation use class
+
+class Points{
+    // Public, private, protected access modifiers in TS
+
+    // private x: number;
+    // private y: number;
+
+    // Typescript class has only one constructor
+    
+    constructor(private x?: number, private y?: number){
+        // this.x = x;
+        // this.y = y;
+        // Ts compiler will initialize the values 
+    }
+
+    draw(){
+        console.log('X: ' + this.x + ', Y: ' + this.y);
+    }
+
+    get_distance(another: Points){
+        // ...
+    }
+
+    // Typescript properties 
+
+    getX(){
+        return this.x;
+    }
+
+    setX(value: number){
+        if (value < 0){
+            throw new Error('value cannot be less than 0.');
+        }
+
+        this.x = value;
+    }
+
+
+
+}
+
+
+// class obj
+
+let point = new Points(3, 67);
+// point.x =  2;
+// point.y = 4;
+let x_ = point.getX;
+// point.setX = 56;
+point.draw();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
