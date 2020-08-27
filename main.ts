@@ -65,6 +65,33 @@ let ends_with_r = (<string>message_).endsWith('r');
 let alternatively = (message_ as string).endsWith('r');
 console.log('Name ends with R: ' + ends_with_r);
 
+// Arrow functions
+
+let do_log = (message) => {
+    console.log(message);
+}
+
+// if one line code then this way
+let other_log = (message) => console.log(message);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
