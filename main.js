@@ -32,10 +32,17 @@ var d;
 var e = [4, 5, 6];
 var f = [4, true, 'g', false];
 // Enums in TypeDcript
-var Red = 1;
-var Green = 2;
-var Blue = 3;
-var Orange = 4;
-var Color = { Red: Red, Green: Green, Blue: Blue, Orange: Orange };
-var bg_color = Color.Red;
+var Red = 0;
+var Green = 1;
+var Blue = 2;
+var Orange = 3;
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 0] = "Red";
+    Color[Color["Green"] = 1] = "Green";
+    Color[Color["Blue"] = 2] = "Blue";
+    Color[Color["Orange"] = 3] = "Orange";
+})(Color || (Color = {}));
+;
+var bg_color = Color.Orange;
 console.log('BG Color: ' + bg_color);

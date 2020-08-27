@@ -47,14 +47,14 @@ let f: any[] = [4, true, 'g', false];
 
 
 // Enums in TypeDcript
-const Red = 1;
-const Green = 2;
-const Blue = 3;
-const Orange = 4;
+const Red = 0;
+const Green = 1;
+const Blue = 2;
+const Orange = 3;
 
-let Color = {Red, Green, Blue, Orange};
+enum Color {Red = 0, Green = 1, Blue = 2, Orange = 3};
 
-let bg_color = Color.Red;
+let bg_color = Color.Orange;
 console.log('BG Color: ' + bg_color);
 
 
