@@ -58,8 +58,12 @@ let bg_color = Color.Orange;
 console.log('BG Color: ' + bg_color);
 
 
-
-
+// Type Assersion
+let message_;
+message_ = 'Amir';
+let ends_with_r = (<string>message_).endsWith('r');
+let alternatively = (message_ as string).endsWith('r');
+console.log('Name ends with R: ' + ends_with_r);
 
 
 
