@@ -1,4 +1,13 @@
-# Type Script
+# TypeScript
+
+## Typed JavaScript at Any Scale
+
+TypeScript extends JavaScript by adding types.
+By understanding JavaScript, TypeScript saves you time catching errors and providing fixes before you run code.
+Any browser, any OS, anywhere JavaScript runs. Entirely Open Source.
+
+## TypeScript Topics:
+
 1. Type Basics
 2. Objects & Arrays
 3. Explicit Types
